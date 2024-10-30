@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(236, 172, 236);
+}
+
+/* pseudo elemento aplicado ao h1 adicionando  conteudo antes */
+
+h1::before{
+    content: "tema ";
+    font-weight: 900;
+    color: rgb(197, 25, 194);
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(185, 41, 180, 0.749);
+    margin: 50px;
+    border-radius: 0%;
+}
+
+nav ul li{
+    margin: 0 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    transition: background-color 0.5s;
+}
+
+nav ul li a:hover{
+    background-color: rgb(242, 58, 7);
+}
+
+nav ul li a:active{
+    background-color:rgb(201, 123, 201)
+}
+nav ul li a:visited{
+    background-color: rgb(164, 164, 213);
+    color: rgb(0, 0, 0);
+}
+
+p::first-letter{
+    font-size: 1.5em;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+@media( max-width:468px){
+    .body{
+        font-size: 60%;
+    }
+}
+
+img.1{
+    width: 20%;
+    height: 30%;
+}
+
+img{
+    width: 30%;
+}
+
